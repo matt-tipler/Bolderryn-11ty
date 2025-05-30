@@ -4,7 +4,7 @@
   "eleventy": "eleventy --watch",
   "debug": "set DEBUG=* & eleventy",
   "css": "node --max-old-space-size=4096 ./node_modules/.bin/postcss src/static/css/tailwind.css --o _site/static/css/style.css --watch",
-  "build": "cross-env NODE_ENV=production eleventy && node --max-old-space-size=4096 ./node_modules/.bin/tailwindcss -i src/static/css/tailwind.css -o _site/static/css/style.css",
+  "build": "cross-env NODE_ENV=production eleventy && tailwindcss -i src/static/css/tailwind.css -o _site/static/css/style.css",
   "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open"
 },
   "devDependencies": {
