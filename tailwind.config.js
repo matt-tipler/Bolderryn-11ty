@@ -1,13 +1,19 @@
 module.exports = {
-  content: ["./**/*.html"],
+  content: [
+    "./**/*.{html,njk,md}",         // cover Eleventy templates and content
+    "./src/_includes/**/*.{njk,html}", // adjust if your layouts are in a different place
+    "./src/_layouts/**/*.{njk,html}",  // or wherever your new layout lives
+  ],
   theme: {
     container: {
       center: true,
     },
     extend: {
+      fontFamily: {
+        flama: ['"Flama Condensed"', 'sans-serif'],
+      },
       colors: {},
     },
   },
-  variants: {},
   plugins: [require("@tailwindcss/typography")],
 };

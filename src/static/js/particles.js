@@ -13,7 +13,7 @@ const particleCount = 100;
      particle.className = 'particle';
      
      // Random size (small)
-     const size = Math.random() * 1 + 0.5;
+     const size = Math.random() * 2 + 0.4;
      particle.style.width = `${size}px`;
      particle.style.height = `${size}px`;
      
@@ -79,7 +79,7 @@ const particleCount = 100;
      particle.className = 'particle';
      
      // Small size
-     const size = Math.random() * 1 + .8;
+     const size = Math.random() * 2 + .8;
      particle.style.width = `${size}px`;
      particle.style.height = `${size}px`;
      
