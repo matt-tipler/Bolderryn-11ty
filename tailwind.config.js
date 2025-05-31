@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./**/*.{html,njk,md}",         // cover Eleventy templates and content
+    "./src/**/*.{html,njk,md}",
     "./src/_includes/**/*.{njk,html}", // adjust if your layouts are in a different place
     "./src/_layouts/**/*.{njk,html}",  // or wherever your new layout lives
   ],
